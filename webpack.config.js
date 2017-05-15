@@ -1,4 +1,5 @@
 var OpenBrowserPlugin = require('open-browser-webpack-plugin');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
     entry: "./app/components/Main.js",
@@ -7,6 +8,7 @@ module.exports = {
     },
     plugins: [
         //new OpenBrowserPlugin({ url: 'http://localhost:8080' })
+        new ExtractTextPlugin('public/css/[name].css'),
     ],
     module: {
         loaders: [
@@ -18,6 +20,13 @@ module.exports = {
                     presets: ['react', 'es2015']
                 }
             },
+            {
+                test: /\.scss$/,
+                loader: ExtractTextPlugin.extract({
+                    fallbackLoader: "style-loader",
+                    loader: "css-loader!sass-loader",
+                }),
+            }
         ]
     }
 };
