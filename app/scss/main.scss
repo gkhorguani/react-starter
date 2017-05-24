@@ -1,7 +1,7 @@
-$test_color:red;
+$test_color: coral;
 
 .container {
     h1 {
-        color: red;
+        color: $test_color;
     }
 }

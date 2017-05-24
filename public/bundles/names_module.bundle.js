@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 182);
+/******/ 	return __webpack_require__(__webpack_require__.s = 183);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -21983,7 +21983,8 @@ module.exports = traverseAllChildren;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 182 */
+/* 182 */,
+/* 183 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22009,16 +22010,16 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var Main = function (_Component) {
-    _inherits(Main, _Component);
+var Names = function (_Component) {
+    _inherits(Names, _Component);
 
-    function Main() {
-        _classCallCheck(this, Main);
+    function Names() {
+        _classCallCheck(this, Names);
 
-        return _possibleConstructorReturn(this, (Main.__proto__ || Object.getPrototypeOf(Main)).apply(this, arguments));
+        return _possibleConstructorReturn(this, (Names.__proto__ || Object.getPrototypeOf(Names)).apply(this, arguments));
     }
 
-    _createClass(Main, [{
+    _createClass(Names, [{
         key: 'render',
         value: function render() {
             return _react2.default.createElement(
@@ -22027,17 +22028,17 @@ var Main = function (_Component) {
                 _react2.default.createElement(
                     'h1',
                     null,
-                    'Heading'
+                    'Names module'
                 ),
-                'Hey Giorgi, bro..'
+                'Hey there'
             );
         }
     }]);
 
-    return Main;
+    return Names;
 }(_react.Component);
 
-_reactDom2.default.render(_react2.default.createElement(Main, null), document.getElementById('app'));
+_reactDom2.default.render(_react2.default.createElement(Names, null), document.getElementById('namesCont'));
 
 /***/ })
 /******/ ]);

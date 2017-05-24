@@ -13,8 +13,10 @@
   "license": "ISC",
   "dependencies": {
     "babel": "^6.23.0",
+    "npm-run-all": "^4.0.2",
     "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react-dom": "^15.5.4",
+    "webpack-dev-server": "^2.4.5"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",
