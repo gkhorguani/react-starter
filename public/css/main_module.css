@@ -1,2 +1,6 @@
 .container h1 {
   color: coral; }
+
+.container .name-row {
+  background: BlueViolet;
+  color: white; }

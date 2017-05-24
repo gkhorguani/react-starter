@@ -22002,6 +22002,10 @@ var _reactDom2 = _interopRequireDefault(_reactDom);
 
 __webpack_require__(80);
 
+var _NameRow = __webpack_require__(188);
+
+var _NameRow2 = _interopRequireDefault(_NameRow);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -22030,7 +22034,8 @@ var Names = function (_Component) {
                     null,
                     'Names module'
                 ),
-                'Hey there'
+                'Hey there',
+                _react2.default.createElement(_NameRow2.default, { id: '1', name: 'Test name' })
             );
         }
     }]);
@@ -22039,6 +22044,52 @@ var Names = function (_Component) {
 }(_react.Component);
 
 _reactDom2.default.render(_react2.default.createElement(Names, null), document.getElementById('namesCont'));
+
+/***/ }),
+/* 184 */,
+/* 185 */,
+/* 186 */,
+/* 187 */,
+/* 188 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(82);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+/*
+  Example of react's state less functional components
+  State is handled on the upper level
+  All the data and methods are passed down through props
+  This example is waiting props.id and props.name and then it's just
+  using es6's destruct feature
+*/
+
+var NameRow = function NameRow(_ref) {
+  var id = _ref.id,
+      name = _ref.name;
+
+
+  return _react2.default.createElement(
+    "div",
+    { className: "name-row" },
+    "Name row ",
+    id,
+    " - ",
+    name
+  );
+};
+
+exports.default = NameRow;
 
 /***/ })
 /******/ ]);

@@ -1,7 +1,13 @@
 $test_color: coral;
+$blue_violet: BlueViolet;
 
 .container {
     h1 {
         color: $test_color;
+    }
+
+    .name-row {
+      background: $blue_violet;
+      color: white;
     }
 }
